@@ -13,10 +13,10 @@ pipeline {
         }
 
         stage('Run Shell Script') {
-            steps {
-                sh './myscript.sh'
-            }
-        }
+    steps {
+        bat 'myscript.bat'
+    }
+}
 
         stage('Print Working Directory') {
             steps {
